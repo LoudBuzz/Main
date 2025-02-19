@@ -1,0 +1,163 @@
+<head>
+<title>Alottu | Home</title>
+</head>
+<style>
+body {
+    margin:5px;
+	margin-left:55;
+	margin-right:55;
+	background-color:black;
+}
+
+@font-face {
+    font-family: 'Main';
+    src: url('Homepage.ttf');
+}
+
+p {
+    font-family: 'Main';
+	font-size: 15px;
+	color:white;
+	align:center;
+}
+
+table {
+    margin:25px;
+	border-color: white;
+}
+
+p.mini1 {
+	font-size: 10px;
+}
+
+p.mini2 {
+	font-size: 8px;
+}
+
+img.portait {
+    border-radius:5px;
+	transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+img.portait:hover {
+    transform: scale(1.1);
+}
+
+img.social {
+    border-radius:100px;
+	transition-duration: 0.3s;
+    transition-property: transform;
+	display: inline-block;
+}
+
+img.social:hover {
+    transform: scale(1.1);
+}
+
+a {
+    color:white;
+	text-decoration:none;
+}
+
+h1 {
+    font-family: 'Main';
+	color:white;
+}
+
+p.nuh {
+    font-size:0px;
+}
+
+.child {
+    display: inline-block;
+}
+
+.parent {
+    margin: 1rem;
+}
+</style>
+<script>
+
+function copy_to_clipboard( elm_id ) {
+
+    var text = document.getElementById( elm_id ).innerHTML;
+
+    navigator.clipboard.writeText( text );
+
+  }
+
+</script>
+<center>
+<table>
+<tbody>
+<tr>
+<td>
+<center>
+<img src="logo.png"
+    width="250">
+<p>• Developer, Artist, Animator, Composer.</p>
+</center>
+</td>
+</tr>
+</tbody>
+</table>
+</center>
+<hr>
+<center><p>— Info —</p></center>
+<br>
+<p>• <i>Who am i?</i></p>
+<p>I'm <b>Alottu.</b><br>I make projects, some I don't finish, but I put my effort into each one.</p>
+<br>
+<p>• <i>What I do?</i></p>
+<p>I make sketches, apps, games, music, and <b>Incredibox</b> animations.<br>I'm not very good but I try.</p>
+<br>
+<p>• <i>What are my projects?</i></p>
+<p>I have several, you can check out some on my itch.io or my github.</p><br>
+<hr>
+<center><p>— My Projects —</p></center>
+<center>
+<table>
+<tbody>
+<tr>
+<td><center>
+	<p class="mini1">Incredibox Fusion</p>
+	<a href="https://github.com/LoudBuzz/IncrediboxFusion">
+    <img class="portait" src="https://camo.githubusercontent.com/73871bd46a65aa7a50090a96af2ea2c6770f9bde36f38a67163b5e14304265dc/68747470733a2f2f692e696d6775722e636f6d2f59624d4e615a682e706e67"
+    width="250">
+	</a>
+	<p class="mini2">An Incredibox V0 Clickteam Fusion Port</p>
+</center></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><center>
+	<p class="mini1">RedCube</p>
+	<a href="https://glassguy.itch.io/redcube">
+    <img class="portait" src="https://img.itch.zone/aW1nLzE0NjkwMDI1LnBuZw==/original/JCBnqe.png"
+    width="230">
+	</a>
+	<p class="mini2">One of my first game</p>
+</center></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><center>
+	<p class="mini1">SpellBound</p>
+	<a href="https://thegalo-x.itch.io/spellbound">
+    <img class="portait" src="https://img.itch.zone/aW1nLzE2NTM4NDEwLnBuZw==/original/G1odlo.png"
+    width="230">
+	</a>
+	<p class="mini2">A game I made with TheGalo X at HaxeJam 2024: Summer Jam</p>
+</center></td>
+</tr>
+</tbody>
+</table>
+</center>
+<br>
+<a href="https://github.com/loudbuzz/">
+<img class="social" src="github.png" width="30">
+</a>
+<a href="https://glassguy.itch.io/">
+<img class="social" src="itchio.png" width="30">
+</a>
+<a href>
+<img class="social" src="discord.png" width="30" onclick="copy_to_clipboard('one')">
+</a>
+<p id="one" class="nuh">Alottu</p>
